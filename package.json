@@ -1,10 +1,10 @@
 {
-  "name": "pcf-metrics-trace-example-node",
+  "name": "pcf-zipkin-nodejs-demo",
   "version": "1.0.0",
   "engines": {
-    "node": "^10.0.0"
+    "node": "15.8.0"
   },
-  "repository": "git@github.com:pivotal-cf/pcf-metrics-trace-example-node.git",
+  "repository": "git@github.com:mjenk664/pcf-zipkin-nodejs-demo.git",
   "license": "MIT",
   "scripts": {
     "orders": "node orders/index.js",
@@ -14,35 +14,24 @@
     "test": "gulp"
   },
   "devDependencies": {
-    "babel-eslint": "latest",
-    "eslint-plugin-babel": "latest",
-    "eslint-plugin-jasmine": "latest",
-    "foreman": "latest",
-    "gulp": "latest",
-    "gulp-eslint": "latest",
-    "gulp-if": "latest",
-    "gulp-jasmine": "latest",
-    "gulp-plumber": "latest",
-    "gulp-util": "latest",
-    "jasmine-async-suite": "latest",
-    "require-dir": "latest",
-    "run-sequence": "latest",
-    "supertest": "latest"
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-jasmine": "^4.1.2"
   },
   "dependencies": {
-    "babel-core": "latest",
-    "babel-plugin-add-module-exports": "latest",
-    "babel-polyfill": "latest",
-    "babel-preset-env": "latest",
-    "babel-preset-stage-3": "latest",
-    "bunyan": "latest",
-    "bunyan-blackhole": "latest",
-    "express": "latest",
-    "isomorphic-fetch": "latest",
-    "npm": "latest",
-    "zipkin": "latest",
-    "zipkin-instrumentation-express": "latest",
-    "zipkin-instrumentation-fetch": "latest",
-    "zipkin-transport-http": "latest"
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "bunyan": "^1.8.15",
+    "bunyan-blackhole": "^1.1.1",
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^3.0.0",
+    "npm": "^7.11.2",
+    "zipkin": "0.22.0",
+    "zipkin-instrumentation-express": "0.22.0",
+    "zipkin-instrumentation-fetch": "0.22.0",
+    "zipkin-transport-http": "0.22.0"
   }
 }

@@ -1,0 +1,24 @@
+---
+defaults: &defaults
+  memory: 512M
+  instances: 1
+  buildpacks:
+    - nodejs_buildpack
+  env:
+    NODE_ENV: production
+    ZIPKIN_SERVER_HOST: zipkin-server.apps.mjenk.io
+    PAYMENTS_HOST: payments.apps.mjenk.io
+    ORDERS_HOST: orders.apps.mjenk.io
+    DEBUG: false
+    
+
+applications:
+  - name: payments
+    command: npm run-script payments
+    <<: *defaults
+  - name: orders
+    command: npm run-script orders
+    <<: *defaults
+  - name: shopping-cart
+    command: npm run-script shopping-cart
+    <<: *defaults
