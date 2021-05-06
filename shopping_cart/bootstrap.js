@@ -6,6 +6,6 @@ const log = logger({name: 'shopping-cart'});
 const ctxImpl = new ExplicitContext();
 const {recorder} = require('../lib/zipkin_recorder')
 const localServiceName = 'shopping-cart';
-const tracer = new Tracer({ctxImpl, recorder, localServiceName});
+const tracer = new Tracer({ctxImpl, recorder: recorder(localServiceName), localServiceName});
 
 shoppingCart(localServiceName, log, tracer).listen(process.env.PORT || 3000);
