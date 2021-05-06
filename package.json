@@ -41,6 +41,7 @@
     "isomorphic-fetch": "^3.0.0",
     "npm": "^7.11.2",
     "zipkin": "^0.22.0",
+    "zipkin-instrumentation-axiosjs": "^0.22.0",
     "zipkin-instrumentation-express": "^0.22.0",
     "zipkin-instrumentation-fetch": "^0.22.0",
     "zipkin-transport-http": "^0.22.0"

@@ -1,15 +1,21 @@
-# PCF Zipkin Tracing Express/NodeJS Sample App
+# VMWare Tanzu Application Service - Zipkin Tracing Express/NodeJS Sample App
 
-This is a nodejs repository with three apps: 
-- shopping-cart
-- orders
-- payments.
+This repository contains three applications built using express and nodeJS: 
+- [shopping cart](shopping_cart)
+- [orders](orders)
+- [payments](payments)
 
-These apps use [Zipkin](https://github.com/openzipkin/zipkin-js) to trace the calls between them. 
+These apps use [Zipkin](https://github.com/openzipkin/zipkin-js) to trace the calls between them.
 
-The traces can then be viewed using tools such as PCF AppMetrics, Zipkin Server, and Splunk.
+The following instrumentation frameworks are leveraged in the apps:
+- [zipkin-instrumentation-fetch](https://github.com/openzipkin/zipkin-js/tree/master/packages/zipkin-instrumentation-fetch)
+- [zipkin-instrumentation-express](https://github.com/openzipkin/zipkin-js/tree/master/packages/zipkin-instrumentation-express)
 
-## Prerequisites - Zipkin Server
+
+The traces can then be viewed using `cf logs <app_name>` or using tools such as VMWare Tanzu AppMetrics, Zipkin Server, and Splunk.
+
+## Prerequisites
+### Zipkin Server
 To demo this application, a **Zipkin Server** is required and must be running to forward spans traced by the apps
 
 The following link contains the steps necessary to download the Zipkin Server JAR: https://github.com/openzipkin/zipkin#quick-start
