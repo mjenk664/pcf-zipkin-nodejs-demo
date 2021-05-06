@@ -1,0 +1,48 @@
+{
+  "name": "pcf-metrics-trace-example-node",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^10.0.0"
+  },
+  "repository": "git@github.com:pivotal-cf/pcf-metrics-trace-example-node.git",
+  "license": "MIT",
+  "scripts": {
+    "orders": "node orders/index.js",
+    "payments": "node payments/index.js",
+    "shopping-cart": "node shopping_cart/index.js",
+    "start": "gulp foreman",
+    "test": "gulp"
+  },
+  "devDependencies": {
+    "babel-eslint": "latest",
+    "eslint-plugin-babel": "latest",
+    "eslint-plugin-jasmine": "latest",
+    "foreman": "latest",
+    "gulp": "latest",
+    "gulp-eslint": "latest",
+    "gulp-if": "latest",
+    "gulp-jasmine": "latest",
+    "gulp-plumber": "latest",
+    "gulp-util": "latest",
+    "jasmine-async-suite": "latest",
+    "require-dir": "latest",
+    "run-sequence": "latest",
+    "supertest": "latest"
+  },
+  "dependencies": {
+    "babel-core": "latest",
+    "babel-plugin-add-module-exports": "latest",
+    "babel-polyfill": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-stage-3": "latest",
+    "bunyan": "latest",
+    "bunyan-blackhole": "latest",
+    "express": "latest",
+    "isomorphic-fetch": "latest",
+    "npm": "latest",
+    "zipkin": "latest",
+    "zipkin-instrumentation-express": "latest",
+    "zipkin-instrumentation-fetch": "latest",
+    "zipkin-transport-http": "latest"
+  }
+}
