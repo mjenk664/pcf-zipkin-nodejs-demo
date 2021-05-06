@@ -4,7 +4,7 @@
   "engines": {
     "node": "^10.0.0"
   },
-  "repository": "git@github.com:pivotal-cf/pcf-metrics-trace-example-node.git",
+  "repository": "git@github.com:mjenk664/pcf-zipkin-nodejs-demo.git",
   "license": "MIT",
   "scripts": {
     "orders": "node orders/index.js",
