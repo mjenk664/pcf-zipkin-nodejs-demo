@@ -7,11 +7,10 @@ defaults: &defaults
   env:
     NODE_ENV: production
     ZIPKIN_SERVER_HOST: zipkin-server.apps.mjenk.io
-    SPLUNK_HEC_URL: http://10.100.37.2:8088/services/collector/raw
-    SPLUNK_HEC_TOKEN: 00000000-0000-0000-0000-000000000002
     PAYMENTS_HOST: payments.apps.mjenk.io
     ORDERS_HOST: orders.apps.mjenk.io
     DEBUG: false
+    
 
 applications:
   - name: payments

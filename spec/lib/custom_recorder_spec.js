@@ -1,5 +1,5 @@
 import '../spec_helper';
-import CustomRecorder from '../../lib/console_log_recorder';
+import CustomRecorder from '../../lib/custom_recorder';
 
 describe('CustomRecorder', () => {
   let recorder, logOutput;

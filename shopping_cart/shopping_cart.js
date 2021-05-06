@@ -14,7 +14,7 @@ export default function(serviceName, log, tracer) {
       res.status(200).send(text);
     } catch (e) {
       res.status(503).send('Something went wrong!');
-      log.error(e.message)
+      console.log(e)
     }
   });
 

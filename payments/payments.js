@@ -8,8 +8,7 @@ export default function(serviceName, log, tracer) {
 
   app.get('/charge-card', (req, res) => {
     log.info('/charge-card called');
-    // res.status(200).send('card successfully charged!');
-    res.status(503).send('card could not be charged!');
+    res.status(200).send('card successfully charged!');
   });
 
   return app;
