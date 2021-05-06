@@ -56,13 +56,13 @@ Once the zipkin-server has been successfully deployed, proceed to the next secti
 ## Using the sample apps
 
 ### 1) UPDATE DEPLOYMENT MANIFEST
-Prior to deploying the sample apps, first update the deployment `manifest.yml` with your environment's specific configuration for the following values:
+Prior to deploying the sample apps, first UPDATE the deployment `manifest.yml` and REPLACE the following with your environment's specific configuration for the following values:
 ```yaml
   ...
   env:
-    ZIPKIN_SERVER_HOST: zipkin-server.apps.mjenk.io
-    PAYMENTS_HOST: payments.apps.mjenk.io
-    ORDERS_HOST: orders.apps.mjenk.io
+    ZIPKIN_SERVER_HOST: <zipkin-server-url>
+    PAYMENTS_HOST: <payments-app-url>
+    ORDERS_HOST: <orders-app-url>
 ```
 
 You may also update other values within the deployment manifest as needed
@@ -77,8 +77,9 @@ cf push
 ```
 
 ### TEST APPS
-The call flow for this application is:
-  - shopping-cart -----> orders -----> payments
+The following diagram depicts call flow for this application
+
+![shopping-cart -----> orders -----> payments](shopping_cart_flow.png)
 
 #### Step 1) 
 In your browser, navigate to `/checkout` or curl the `/checkout` endpoint for the given Shopping Cart app.
